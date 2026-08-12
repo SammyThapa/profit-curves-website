@@ -8,7 +8,7 @@ import {
 import { IoLocation } from "react-icons/io5";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaPhoneAlt } from "react-icons/fa";
-import Link from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
