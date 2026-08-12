@@ -121,7 +121,7 @@ Message: ${textMessage}
 
             <div>
               <h3>Working Hours</h3>
-              <p>Monday - Friday, 9 AM - 6 PM</p>
+              <p>Monday - Saturday, 10 AM - 6 PM</p>
             </div>
           </div>
         </div>
