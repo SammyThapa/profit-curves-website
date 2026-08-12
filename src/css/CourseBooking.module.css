@@ -1,0 +1,406 @@
+.pageContainer {
+  min-height: 100vh;
+
+  background: #f8fafc;
+
+  padding: 80px 8%;
+}
+
+
+/* MAIN LAYOUT */
+
+.bookingContainer {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 40px;
+
+  align-items: start;
+}
+
+
+/* =========================
+   COURSE INFORMATION
+   ========================= */
+
+.courseInfo {
+  background: #fff;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.courseInfo:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* COURSE IMAGE */
+
+.courseInfo img {
+  width: 100%;
+
+  height: 280px;
+
+  object-fit: cover;
+
+  display: block;
+
+  border-radius: 15px;
+}
+
+
+/* MODE */
+
+.mode {
+  display: inline-block;
+
+  margin-top: 20px;
+
+  padding: 7px 15px;
+
+  border-radius: 20px;
+
+  background: #eef2ff;
+
+  color: #2563eb;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  text-transform: capitalize;
+}
+
+
+/* TITLE */
+
+.courseInfo h1 {
+  margin-top: 20px;
+
+  font-size: 2rem;
+
+  line-height: 1.3;
+
+  color: #1e293b;
+}
+
+
+/* DESCRIPTION */
+
+.courseInfo p {
+  margin-top: 15px;
+
+  color: #64748b;
+
+  line-height: 1.7;
+}
+
+
+/* COURSE DETAILS */
+
+.courseDetails {
+  display: flex;
+
+  gap: 20px;
+
+  margin-top: 25px;
+
+  flex-wrap: wrap;
+
+  color: #64748b;
+
+  font-size: 0.95rem;
+}
+
+
+/* PRICE */
+
+.courseInfo h2 {
+  margin-top: 30px;
+
+  font-size: 2rem;
+
+  color: #2563eb;
+}
+
+
+/* =========================
+   FORM
+   ========================= */
+
+.formContainer {
+  background: #fff;
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* FORM HEADING */
+
+.formContainer h2 {
+  font-size: 2rem;
+
+  color: #1e293b;
+
+  line-height: 1.3;
+}
+
+
+/* FORM DESCRIPTION */
+
+.formContainer > p {
+  margin-top: 10px;
+
+  color: #64748b;
+
+  line-height: 1.6;
+}
+
+
+/* FORM */
+
+.formContainer form {
+  display: flex;
+
+  flex-direction: column;
+
+  margin-top: 30px;
+
+  gap: 10px;
+}
+
+
+/* LABEL */
+
+.formContainer label {
+  margin-top: 10px;
+
+  font-weight: 600;
+
+  color: #334155;
+}
+
+
+/* INPUT */
+
+.formContainer input {
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 10px;
+
+  font-size: 1rem;
+
+  outline: none;
+
+  box-sizing: border-box;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* INPUT FOCUS */
+
+.formContainer input:focus {
+  border-color: #6366f1;
+
+  box-shadow:
+    0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+
+/* SUBMIT BUTTON */
+
+.formContainer button {
+  margin-top: 20px;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 30px;
+
+  background: linear-gradient(
+    90deg,
+    #b500fd,
+    #2563eb
+  );
+
+  color: white;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* BUTTON HOVER */
+
+.formContainer button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 20px rgba(37, 99, 235, 0.3);
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+  .pageContainer {
+    padding: 70px 30px;
+  }
+
+  .bookingContainer {
+    gap: 30px;
+  }
+
+  .courseInfo h1 {
+    font-size: 1.8rem;
+  }
+
+  .formContainer h2 {
+    font-size: 1.8rem;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .pageContainer {
+    padding: 50px 20px;
+  }
+
+
+  .bookingContainer {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+
+  /* COURSE */
+
+  .courseInfo {
+    padding: 25px;
+  }
+
+
+  .courseInfo img {
+    height: 220px;
+  }
+
+
+  .courseInfo h1 {
+    font-size: 1.7rem;
+  }
+
+
+  .courseInfo h2 {
+    font-size: 1.8rem;
+  }
+
+
+  /* FORM */
+
+  .formContainer {
+    padding: 25px;
+  }
+
+
+  .formContainer h2 {
+    font-size: 1.7rem;
+  }
+
+
+  .formContainer input {
+    padding: 13px 14px;
+  }
+
+
+  .formContainer button {
+    padding: 14px;
+  }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+   ========================= */
+
+@media (max-width: 400px) {
+
+  .pageContainer {
+    padding: 40px 15px;
+  }
+
+
+  .courseInfo,
+  .formContainer {
+    padding: 20px;
+  }
+
+
+  .courseInfo img {
+    height: 190px;
+  }
+
+
+  .courseInfo h1 {
+    font-size: 1.5rem;
+  }
+
+
+  .courseInfo h2 {
+    font-size: 1.6rem;
+  }
+
+
+  .formContainer h2 {
+    font-size: 1.5rem;
+  }
+
+}

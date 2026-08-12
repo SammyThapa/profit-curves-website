@@ -1,0 +1,166 @@
+.flexingCon {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 15rem;
+}
+
+
+.card {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+
+.card > h3 {
+  font-weight: bold;
+
+  font-size: 2rem;
+
+  margin: 0;
+}
+
+
+.card > p {
+  font-size: 15px;
+
+  margin-top: 10px;
+
+  margin-bottom: 0;
+
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
+.mainCon {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  background-color: #2563eb;
+
+  color: white;
+
+  padding: 60px 8%;
+
+  margin: 50px 0;
+}
+
+
+.mainCon > h2 {
+  font-weight: bold;
+
+  font-size: 3rem;
+
+  margin: 0;
+
+  text-align: center;
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+  .flexingCon {
+    gap: 7rem;
+  }
+
+  .mainCon > h2 {
+    font-size: 2.5rem;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+
+  .mainCon {
+    padding: 50px 20px;
+
+    margin: 40px 0;
+
+    gap: 35px;
+  }
+
+
+  .mainCon > h2 {
+    font-size: 2rem;
+
+    line-height: 1.2;
+  }
+
+
+  .flexingCon {
+    width: 100%;
+
+    flex-direction: column;
+
+    gap: 30px;
+  }
+
+
+  .card {
+    width: 100%;
+  }
+
+
+  .card > h3 {
+    font-size: 1.7rem;
+  }
+
+
+  .card > p {
+    font-size: 0.9rem;
+
+    margin-top: 8px;
+  }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+   ========================= */
+
+@media (max-width: 400px) {
+
+  .mainCon {
+    padding: 45px 15px;
+  }
+
+
+  .mainCon > h2 {
+    font-size: 1.8rem;
+  }
+
+
+  .card > h3 {
+    font-size: 1.5rem;
+  }
+
+}

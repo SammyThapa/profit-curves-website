@@ -1,0 +1,345 @@
+.mainContainer {
+  position: relative;
+
+  min-height: 100vh;
+
+  background-image: url("../assets/trader.png");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  display: flex;
+
+  align-items: center;
+  
+
+}
+
+
+/* DARK OVERLAY */
+
+.overlay {
+  position: absolute;
+
+  inset: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+
+
+
+
+}
+
+
+/* MAIN CONTENT LAYOUT */
+
+.flexingCon {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-around;
+
+  align-items: center;
+
+  padding: 60px 8%;
+
+  gap: 50px;
+}
+
+
+/* IMAGE */
+
+.imageCon {
+  z-index: 2;
+
+  width: 50%;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+
+.imageCon > img {
+  width: 100%;
+
+  max-width: 800px;
+
+  height: auto;
+
+  display: block;
+
+  border: 8px solid white;
+
+  border-radius: 15px;
+
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+
+  transform: rotate(-3deg);
+}
+
+
+/* TEXT CONTENT */
+
+.contentContainer {
+  position: relative;
+
+  z-index: 2;
+
+  width: 50%;
+
+  max-width: 650px;
+
+  margin-left: 8%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+
+  color: white;
+}
+
+
+.contentContainer h3 {
+  font-size: 1rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+}
+
+
+.contentContainer h2 {
+  font-size: 4rem;
+
+  font-weight: 700;
+
+  line-height: 1.15;
+
+  margin: 0;
+}
+
+
+.contentContainer p {
+  line-height: 1.8;
+
+  color: #ddd;
+
+  margin: 0;
+}
+
+
+/* BUTTON */
+
+.contentContainer button {
+  width: 180px;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 30px;
+
+  background: linear-gradient(
+    90deg,
+    #b500fd,
+    #2563eb
+  );
+
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.contentContainer button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 1000px) {
+
+  .flexingCon {
+    gap: 35px;
+
+    padding: 60px 5%;
+  }
+
+
+  .contentContainer {
+    margin-left: 0;
+  }
+
+
+  .contentContainer h2 {
+    font-size: 3.2rem;
+  }
+
+
+  .imageCon > img {
+    max-width: 600px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .mainContainer {
+    min-height: auto;
+
+    background-position: center;
+  }
+
+
+  .flexingCon {
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 60px 20px;
+
+    gap: 45px;
+  }
+
+
+  /* IMAGE */
+
+  .imageCon {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+  }
+
+
+  .imageCon > img {
+    width: 100%;
+
+    max-width: 500px;
+
+    height: auto;
+
+    border: 5px solid white;
+
+    border-radius: 12px;
+
+    transform: rotate(-2deg);
+  }
+
+
+  /* CONTENT */
+
+  .contentContainer {
+    width: 100%;
+
+    max-width: 600px;
+
+    margin-left: 0;
+
+    align-items: center;
+
+    text-align: center;
+
+    gap: 15px;
+  }
+
+
+  .contentContainer h3 {
+    font-size: 0.85rem;
+
+    letter-spacing: 1.5px;
+  }
+
+
+  .contentContainer h2 {
+    font-size: 2.5rem;
+
+    line-height: 1.2;
+  }
+
+
+  .contentContainer p {
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+  }
+
+
+  .contentContainer button {
+    width: 180px;
+
+    padding: 14px;
+  }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+   ========================= */
+
+@media (max-width: 400px) {
+
+  .flexingCon {
+    padding: 45px 15px;
+
+    gap: 35px;
+  }
+
+
+  .contentContainer h2 {
+    font-size: 2rem;
+  }
+
+
+  .contentContainer p {
+    font-size: 0.9rem;
+
+    line-height: 1.6;
+  }
+
+
+  .imageCon > img {
+    border-width: 4px;
+
+    transform: rotate(-1deg);
+  }
+
+
+  .contentContainer button {
+    width: 170px;
+
+    padding: 13px;
+  }
+
+}

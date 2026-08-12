@@ -1,0 +1,201 @@
+.footer {
+  margin-top: 80px;
+
+  background: linear-gradient(
+    90deg,
+    #0019fa 0%,
+    #fa06fe 60%,
+    #c300ff 100%
+  );
+
+  color: white;
+
+  padding: 70px 8% 20px;
+}
+
+
+/* FOOTER GRID */
+
+.footerGrid {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+
+  gap: 50px;
+}
+
+
+/* COLUMNS */
+
+.column {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+
+.column h2 {
+  font-size: 2rem;
+
+  line-height: 1.2;
+}
+
+
+.column h3 {
+  font-size: 1.2rem;
+
+  margin-bottom: 5px;
+}
+
+
+.column p {
+  color: rgba(255, 255, 255, 0.9);
+
+  line-height: 1.8;
+
+  max-width: 350px;
+}
+
+
+/* LINKS */
+
+.column a {
+  width: fit-content;
+
+  color: white;
+
+  text-decoration: none;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.column a:hover {
+  color: #ffe082;
+
+  transform: translateX(5px);
+}
+
+
+/* SOCIAL ICONS */
+
+.socials {
+  display: flex;
+
+  gap: 18px;
+
+  margin-top: 10px;
+}
+
+
+.socials svg {
+  font-size: 1.5rem;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+
+.socials svg:hover {
+  transform: translateY(-4px);
+
+  color: #ffe082;
+}
+
+
+/* BOTTOM */
+
+.bottom {
+  max-width: 1200px;
+
+  margin: 50px auto 0;
+
+  padding-top: 25px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+  text-align: center;
+}
+
+
+.bottom p {
+  color: white;
+
+  font-size: 0.9rem;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .footer {
+    padding: 60px 30px 20px;
+  }
+
+  .footerGrid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 40px;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .footer {
+    margin-top: 50px;
+
+    padding: 50px 25px 20px;
+  }
+
+  .footerGrid {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .column {
+    gap: 13px;
+  }
+
+  .column h2 {
+    font-size: 1.7rem;
+  }
+
+  .column h3 {
+    font-size: 1.1rem;
+  }
+
+  .column p {
+    font-size: 0.95rem;
+  }
+
+  .socials {
+    gap: 20px;
+  }
+
+  .bottom {
+    margin-top: 40px;
+  }
+
+  .bottom p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+
+}
