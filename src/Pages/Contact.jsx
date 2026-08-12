@@ -110,7 +110,7 @@ Message: ${textMessage}
 
             <div>
               <h3>Phone</h3>
-              <p>+91 74559 32449</p>
+              <p>+91 7017569269</p>
             </div>
           </div>
 
