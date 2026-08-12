@@ -8,6 +8,7 @@ import {
 import { IoLocation } from "react-icons/io5";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaPhoneAlt } from "react-icons/fa";
+import Link from "react-router-dom";
 
 function Footer() {
   return (
@@ -31,23 +32,31 @@ function Footer() {
 
         <div className={style.column}>
           <h3 className="font-bold">Quick Links</h3>
-
-          <a href="/">Home</a>
-          <a href="/courses/All">Courses</a>
-          <a href="/blog">Blog</a>
-          <a href="/aboutUs">About</a>
-          <a href="/contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/courses/All">Courses</Link>
+          <Link to="/blog">Blog</Link>
+          <Link to="/aboutUs">About</Link>
+          <Link to="/contact">Contact</Link>
         </div>
 
         <div className={style.column}>
           <h3 className="font-bold">Popular Courses</h3>
 
-          <a href="/CourseBooking/React course Checkout">React Development</a>
-          <a href="/CourseBooking/JS course Checkout">JavaScript Mastery</a>
-          <a href="/CourseBooking/Python course Checkout">Python Programming</a>
-          <a href="/CourseBooking/UI and UX Design course Checkout">
-            UI/UX Design
-          </a>
+          <Link to="/CourseBooking/Profit Curves Foundation course Checkout">
+            Profit Curves Foundation
+          </Link>
+
+          <Link to="/CourseBooking/Profit Curves Pro course Checkout">
+            Profit Curves Pro
+          </Link>
+
+          <Link to="/CourseBooking/Profit Curves Elite course Checkout">
+            Profit Curves Elite
+          </Link>
+
+          <Link to="/CourseBooking/Profit Curves One-on-One course Checkout">
+            Profit Curves One-on-One
+          </Link>
         </div>
 
         <div className={style.column}>
